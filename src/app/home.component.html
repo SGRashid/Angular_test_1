@@ -1,0 +1,14 @@
+<nav>
+    <p><a routerLink="" routerLinkActive="active">Главная</a></p>
+    <p><a routerLink="/about" routerLinkActive="active">О сайте</a></p>
+    <p><a routerLink="/jkl;jk;" routerLinkActive="active">404 not found</a></p>
+</nav>
+<h1>Главная</h1>
+<h3>Список покупок на {{myDate | date:"dd.MM.yyyy"}}</h3>
+<p><a routerLink="/ngif" routerLinkActive="active">Редактировать список покупок >></a></p>
+<ol>
+    <li *ngFor="let item of items">
+        <span *ngIf="!itemsChecked.includes(item)">{{item}}</span>
+        <span class="checked" *ngIf="itemsChecked.includes(item)">{{item}}</span>
+    </li>
+</ol>

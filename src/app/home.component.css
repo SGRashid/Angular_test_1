@@ -1,0 +1,14 @@
+.active {
+    color: red;
+    font-weight: bold;
+}
+.checked {
+    color: grey;
+    text-decoration: line-through;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+a { margin-right: 15px; }
